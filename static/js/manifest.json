@@ -1,0 +1,24 @@
+{
+  "name": "Prepage",
+  "short_name": "Horror",
+  "lang": "en-US",
+  "start_url": "Prepage.html",
+  "scope": "./",
+  "orientation": "portrait",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "white",
+  "icons": [
+    {
+      "src": "/static/images/skull.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/images/skull.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
