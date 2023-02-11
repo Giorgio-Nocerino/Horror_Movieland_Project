@@ -1,0 +1,218 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+
+}
+div{
+    text-align: center;
+}
+
+
+.high_piece{
+    background-color: transparent;
+    position: relative;
+    top: 15em;
+    width:55em;
+    padding: 10px;
+    text-align: center;
+}
+.high_piece h1{
+    color:white;
+    font-family: 'Copperplate Gothic Light', fantasy;
+    font-size:42px;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+p.gol{
+    color: black;
+}
+
+.big_piece .low_piece{
+    width: 400px;
+    height: 425px;
+    border-radius: 15px;
+    background-color: #101010;
+    position: absolute;
+    top:50%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.big_piece .low_piece .text_user #username{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .text_pwd #password{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .bottom #submit{
+    background-color: #982626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.big_piece .newaccount p {
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    float: right;
+    top:2vw;
+    right:6em;
+    transform: translate(2, -6em);
+}
+
+.big_piece .newaccount p .linke{
+    color: white;
+    text-decoration: none;
+}
+.big_piece .newaccount p .linke:hover{
+    color: yellow;
+}
+
+img{
+    width:35px;
+    height:35px;
+    margin-top: 5px;
+    margin-bottom:5px;
+    position: relative;
+    float: left;
+    left:10px;
+}
+a{
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.error{
+    margin: 10px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 800px) {  /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .high_piece{
+        background-color: transparent;
+        position: relative;
+        top: 5em;
+        left: 50%;
+        transform: translate(-50%);
+        width:40em;
+        padding: 10px;
+        text-align: center;
+    }
+    .high_piece h1{
+        color:white;
+        font-family: 'Copperplate Gothic Light', fantasy;
+        font-size:42px;
+    }
+
+    .big_piece .low_piece {
+        width: 400px;
+        height: 535px;
+        border-radius: 15px;
+        background-color: #101010;
+        position: absolute;
+        top:75%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+button:hover{
+    box-shadow: 5px 5px 10px grey;
+}
+#submit:hover{
+    box-shadow: 5px 5px 10px red;
+}
+
+.btn_google{
+    border-radius: 8px;
+    border: 0;
+    outline: none;
+    position: relative;
+    width: 150px;
+    height:50px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.btn_google .gol{
+    font-family: Google Sans,-apple-system,BlinkMacSystemFont,sans-serif;
+    position: relative;
+    top: -7px;
+}
+
+@media screen and (max-width: 412px) {
+    body{
+        background-image: url("/static/images/dark.jpg");
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-size: 412px 1075px;
+    }
+
+    .high_piece{
+        background-color: transparent;
+        position: relative;
+        top: 1em;
+        left: 50%;
+        transform: translate(-50%);
+        width:25em;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .high_piece h1 {
+        color: white;
+        font-family: 'Copperplate Gothic Light', fantasy;
+        font-size: 33px;
+    }
+
+    .big_piece .low_piece {
+        width: 400px;
+        height: 535px;
+        border-radius: 15px;
+        background-color: #101010;
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,170 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+    overflow: overlay;
+}
+header{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.Piece .onCinema{
+    position: relative;
+    top: 2em;
+    background-color: #101010;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:500px;
+}
+
+.Piece .onCinema .onPiece{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12em;
+}
+
+.Piece .onCinema .onPiece .piece img{
+    position: relative;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+   /*right: 10em;*/
+}
+
+.Piece .onCinema .onPiece .title_date{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-125%);
+}
+
+.Piece .onCinema .onPiece .title_date .piece_title {
+    font-weight: lighter;
+    font-size: 35px;
+    font-family: "Barlow", sans-serif;
+    color: white;
+}
+
+.Piece .onCinema .onPiece .title_date .release_date {
+    font-weight: lighter;
+    font-size: 35px;
+    font-family: "Barlow", sans-serif;
+    color: white;
+}
+
+img#image{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    z-index: 1;
+}
+img:hover{
+    transform: rotate(-360deg);
+}
+
+.return #image{
+    position: relative;
+    float: left;
+    top:38px;
+    left:60px;
+}
+
+@media screen and (max-width: 800px) {
+    .Piece .onCinema{
+        position: relative;
+        top: 2em;
+        background-color: #101010;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height:600px;
+    }
+    .Piece .onCinema .onPiece{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+        left: 60%;
+        transform: translate(-50%);
+    }
+
+    .Piece .onCinema .onPiece .title_date{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        transform: translate(-60%);
+    }
+
+    img#image{
+        width:35px;
+        height:35px;
+        transition: transform .5s;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        z-index: 1;
+    }
+    img:hover{
+        transform: rotate(-360deg);
+    }
+
+    .return #image{
+        position: relative;
+        float: left;
+        top:45px;
+        left:30px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .Piece .onCinema .onPiece .piece img {
+        position: relative;
+        border-radius: 15px;
+        width: 370px;
+        height: 205px;
+        left: 50%;
+        transform: translate(-61%);
+    }
+
+    .Piece .onCinema .onPiece .title_date .piece_title {
+        font-weight: lighter;
+        font-size: 30px;
+        font-family: "Barlow", sans-serif;
+        color: white;
+    }
+
+    .Piece .onCinema .onPiece .title_date .release_date {
+        font-weight: lighter;
+        font-size: 30px;
+        font-family: "Barlow", sans-serif;
+        color: white;
+    }
+
+}

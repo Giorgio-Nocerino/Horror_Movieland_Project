@@ -1,0 +1,93 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+}
+
+header{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.link_piece{
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    background-color: #101010;
+    position: absolute;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link_piece a .login_btn{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.link_piece a .login_btn:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.link_piece a .login_btn:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.link_piece a .signup_btn{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.link_piece a .signup_btn:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.link_piece a .signup_btn:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.login_btn p{
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+.signup_btn p{
+    font-size: 20px;
+    margin: 4px 2px;
+}

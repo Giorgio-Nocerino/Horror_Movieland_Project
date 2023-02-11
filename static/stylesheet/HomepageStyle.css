@@ -1,0 +1,1288 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+    overflow: overlay;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #101010;
+    border-radius: 10px;
+}
+
+.first_piece{
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.first_piece h1.h1first{
+    color: white;
+    font-family: "Copperplate Gothic Light", fantasy;
+    font-size: 30px;
+}
+
+.first_piece h1.h1second{
+    color: white;
+    font-family: "Copperplate Gothic", fantasy;
+    font-size: 50px;
+    position: relative;
+    top:-30px;
+}
+
+
+
+
+.hamburger-icon {
+    position: absolute;
+    z-index: 100;
+    top: 5vh;
+    left: 5vw;
+    padding-bottom: 2vh;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    transition: 0.7s ease-in-out;
+    transform: none;
+    cursor: pointer;
+
+}
+
+#open_menu:checked ~ .menu-pane {
+    top: 0;
+    left: 30px;
+    transform: translateX(-30px);
+    background-color: #d9d9d9;
+    z-index: 99;
+
+}
+
+
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(2) {
+    transform: rotate(-25deg);
+    background-color: black;
+}
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(3) {
+    transform: rotate(25deg);
+    background-color: black;
+}
+
+#open_menu:checked ~ .hamburger-icon span:nth-of-type(1) {
+    opacity: 0;
+}
+
+div.menu-pane {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 539px;
+    height: 760px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-pane a {
+    color: black;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+.menu-pane p {
+    color: black;
+    font-size: 26px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.menu-pane nav {
+    padding: 10%;
+}
+
+.menu-pane .lateral .manual #imgManual{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 1vw;
+    transform: translateY(5vw);
+}
+
+.menu-pane .lateral .manual .writeManual #nomeManual{
+    position: relative;
+    float: left;
+    top: 1em;
+    left: 2vw;
+    transform: translateY(4vw);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.menu-pane .lateral .manual{
+    transition: 0.3s ease-in-out;
+}
+
+.menu-pane .lateral .manual:hover{
+    transform: scale(1.1);
+}
+
+.menu-pane .lateral .account #imgAccount{
+    position: relative;
+    float: left;
+    top: 0;
+    left: -12vw;
+    transform: translateY(9vw);
+    width: 45px;
+    height: 47.41px;
+}
+
+.menu-pane .lateral .account .writeAccount #nomeAccount{
+    position: relative;
+    float: left;
+    top: 1em;
+    left: -11vw;
+    transform: translateY(8vw);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.menu-pane .lateral .account{
+    transition: 0.3s ease-in-out;
+}
+
+.menu-pane .lateral .account:hover{
+    transform: scale(1.1);
+}
+
+input.hamburger-checkbox {
+    position: absolute;
+    z-index: 3;
+    top: 5vh;
+    left: 5vw;
+    width: 3vw;
+    opacity: 0;
+    height: 6vh;
+    cursor: pointer;
+}
+
+/*CSS of Second Piece*/
+
+.second_piece .navbar{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.second_piece .navbar .dropdown1 .dropbtn1{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.second_piece .navbar .dropdown1 .dropbtn1:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.second_piece .navbar .dropdown1 .dropbtn1:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.dropbtn1 p{
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+.second_piece .navbar .dropdown2 .dropbtn2{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.second_piece .navbar .dropdown2 .dropbtn2:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.second_piece .navbar .dropdown2 .dropbtn2:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.dropbtn2 p{
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+.second_piece .navbar .dropdown3 .dropbtn3{
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    width: 227px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(to bottom, #982626, #390C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.3s;
+}
+
+.second_piece .navbar .dropdown3 .dropbtn3:hover{
+    background: linear-gradient(to bottom, #c73434, #5b1414);
+}
+
+.second_piece .navbar .dropdown3 .dropbtn3:active{
+    background: linear-gradient(to top, #982626, #390C0C);
+}
+
+.dropbtn3 p{
+    font-size: 20px;
+    margin: 4px 2px;
+}
+
+/*CSS of Third Piece*/
+
+.third_piece .movies{
+    position: relative;
+    top: 7vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+
+.third_piece .movies .card{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.third_piece .movies .card .movie .box{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.third_piece .movies .card .fav_heart .fav_heart_btn{
+    position: relative;
+    bottom: 4em;
+    float: right;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ff0073;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+    display: none;
+}
+
+.third_piece .movies .card:hover .fav_heart .fav_heart_btn{
+    display: block;
+}
+
+.third_piece .movies .card .fav_heart .fav_heart_btn img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:5%;
+}
+
+.third_piece .movies .card .movie .box:hover{
+    transform: scale(1.1);
+}
+
+.third_piece .movies .card .movie p{
+    position: relative;
+    top: -1vw;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color:white;
+    font-family: "Barlow", sans-serif;
+}
+
+.is_open{ /*variabile incognito*/
+    top: 0;
+    left: 30px;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000);
+    opacity: 90%;
+    z-index: 99;
+}
+
+div.menu-pane2 {
+    background:linear-gradient(to bottom, #3A3434, #000);
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 1536px;
+    height: 760px;
+    transition: 0.5s ease-in-out;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#form{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0 20em;
+}
+
+#form input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    float: left;
+    left:-15em;
+    backdrop-filter: blur(4px) saturate(180%);
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+#form button{
+    background-color: #3A3434;
+    position: relative;
+    float: right;
+    right:-24em;
+    border: 0;
+    border-radius: 15px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    width: 60px;
+    height:60px;
+}
+
+#form button img{
+    width:42px;
+    height:42px;
+}
+
+.third_piece .movies .movie .box .picture{
+    position: relative;
+    top:-1px;
+    left: -6px;
+    width: 227px;
+    height: 282px;
+    border-radius: 15px;
+}
+
+/*CSS of Fourth Piece*/
+
+.fourth_piece .menu-pane2 .returna #close_lateral{
+    position: relative;
+    left: 50%;
+    top: 1em;
+    transform: translate(-50%);
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #525151, #0E0C0C);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.fourth_piece .menu-pane2 .returna #close_lateral:hover{
+    background: linear-gradient(to bottom, #8a8a8a, #4f4f4f);
+}
+
+.fourth_piece .menu-pane2 .returna #close_lateral:active{
+    background: linear-gradient(to top, #525151, #0E0C0C);
+}
+
+.fourth_piece .menu-pane2 .returna #close_lateral #close{
+    width:25px;
+    height:25px;
+}
+
+/*CSS of Fifth Piece*/
+
+.movie_mother header .title{
+    background-color: transparent;
+    position: relative;
+    top: 21em;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Copperplate Gothic", fantasy;
+    color: white;
+}
+
+section{
+    display: flex;
+    position: relative;
+    top: 23em;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#flex_section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo{
+    position: relative;
+    width: 27%;
+    height: 520px;
+    padding: 20px;
+}
+
+.photo #henko{
+    position: relative;
+    bottom: 3%;
+    border-radius: 15px;
+    float: right;
+    width: 300px;
+    height: 410px;
+}
+
+article {
+    position: relative;
+    top: 0;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    background-color: #101010;
+    height: auto;
+    text-align: center;
+}
+
+article h1{
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+article .plot{
+    font-family: "Barlow", sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.flex_footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer{
+    position: relative;
+    top: 23em;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.trailer {
+    position: relative;
+    top: -20px;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    background-color: transparent;
+    height: auto;
+    text-align: center;
+}
+
+.trailer h1{
+    position: relative;
+    left: 50%;
+    transform: translate(-20%);
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+.trailer video{
+   width: 50em;
+    height: 25em;
+}
+
+.cast {
+    position: relative;
+    background-color: transparent;
+    padding: 15px;
+    text-align: center;
+    height: 32em;
+}
+
+.cast h1{
+    position: relative;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+    font-family: "Barlow", sans-serif;
+}
+
+.cast .actors .actor .boxy{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(to bottom, #434141, #222222);
+}
+
+.cast .actors{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+
+.cast .actors .actor{
+    display: none;
+}
+
+.cast .actors .actor:nth-of-type(1){
+    display: block;
+}
+
+.cast .actors button{
+    position: relative;
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    transition: all 5000s ease-in-out;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.cast .actors .actor .name{
+    position: relative;
+    top: -1vw;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color:white;
+    font-family: "Barlow", sans-serif;
+}
+
+.cast .actors .actor .boxy .image{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+}
+
+.previous img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:5%;
+}
+
+.next img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:5%;
+}
+
+
+@media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+
+
+    .second_piece .navbar{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    div.menu-pane2 {
+        background:linear-gradient(to bottom, #3A3434, #000);
+        position: absolute;
+        top: 0;
+        transform: translateX(-105vw);
+        width: 767px;
+        height: 752px;
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    #form{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        width: 10px;
+        border-radius: 15px;
+        padding: 0 20em;
+    }
+
+    #form button{
+        background-color: #3A3434;
+        position: relative;
+        float: right;
+        right:-2em;
+        border: 0;
+        border-radius: 15px;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        width: 60px;
+        height:60px;
+    }
+
+    .third_piece .movies{
+        position: relative;
+        top: 7vw;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 75px;
+    }
+
+    .menu-pane .lateral .account #imgAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -25vw;
+        transform: translateY(9vw);
+        width: 45px;
+        height: 47.41px;
+    }
+
+    .menu-pane .lateral .manual #imgManual{
+        position: relative;
+        float: left;
+        top: 10px;
+        left: 1vw;
+        transform: translateY(5vw);
+    }
+
+    .menu-pane .lateral .account .writeAccount #nomeAccount{
+        position: relative;
+        float: left;
+        top: 2em;
+        left: -23vw;
+        transform: translateY(8vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .menu-pane .lateral .manual .writeManual #nomeManual{
+        position: relative;
+        float: left;
+        top: 1em;
+        left: 3vw;
+        transform: translateY(4vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .third_piece .movies .card .fav_heart .fav_heart_btn{
+        position: relative;
+        bottom: 4em;
+        float: right;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #ff0073;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        transition: 0.2s ease-in-out;
+        display: none;
+    }
+
+    .third_piece .movies .card:hover .fav_heart .fav_heart_btn{
+        display: block;
+    }
+    /*CSS of Fifth Piece*/
+
+
+    .movie_mother header .title{
+        background-color: transparent;
+        position: relative;
+        top: 21em;
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+        font-family: "Copperplate Gothic", fantasy;
+        color: white;
+    }
+
+    section{
+        display: flex;
+        position: relative;
+        top: 23em;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #flex_section{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .photo{
+        position: relative;
+        width: 27%;
+        height: 520px;
+        padding: 20px;
+    }
+
+    .photo #henko{
+        position: relative;
+        border-radius: 15px;
+        left: 150%;
+        bottom: 17px;
+        width: 300px;
+        height: 410px;
+    }
+
+    article {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 20px;
+        padding: 30px;
+        width: 60%;
+        background-color: #101010;
+        height: auto;
+        text-align: center;
+    }
+
+    article h1{
+        font-family: "Barlow", sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    article .plot{
+        font-family: "Barlow", sans-serif;
+        font-size: 24px;
+        color: white;
+    }
+
+    .flex_footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{
+        position: relative;
+        top: 23em;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .trailer {
+        position: relative;
+        top: -20px;
+        border-radius: 20px;
+        padding: 30px;
+        width: 60%;
+        background-color: transparent;
+        height: auto;
+        text-align: center;
+    }
+
+    .trailer h1{
+        position: relative;
+        left: 50%;
+        transform: translate(-20%);
+        font-family: "Barlow", sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .trailer video{
+        width: 43em;
+        height: 25em;
+    }
+
+    .cast {
+        position: relative;
+        background-color: transparent;
+        padding: 15px;
+        text-align: center;
+        height: 32em;
+    }
+
+    .cast h1{
+        position: relative;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+        font-family: "Barlow", sans-serif;
+    }
+
+    .cast .actors .actor .boxy{
+        position: relative;
+        border: none;
+        border-radius: 15px;
+        width: 170px;
+        height: 170px;
+        background: linear-gradient(to bottom, #434141, #222222);
+    }
+
+    .cast .actors{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .cast .actors .actor{
+        display: none;
+    }
+
+    .cast .actors .actor:nth-of-type(1){
+        display: block;
+    }
+
+    .cast .actors button{
+        position: relative;
+        border: none;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(to bottom, #434141, #222222);
+        transition: all 5000s ease-in-out;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .cast .actors .actor .name{
+        position: relative;
+        top: -1vw;
+        left:50%;
+        transform: translate(-50%);
+        font-size: 20px;
+        color:white;
+        font-family: "Barlow", sans-serif;
+    }
+
+    .cast .actors .actor .boxy .image{
+        position: relative;
+        width: 170px;
+        height: 170px;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 412px) { /*schermo Galaxy A70*/
+    body{
+        background-image: url("/static/images/dark.jpg");
+        background-repeat:repeat-x;
+        background-attachment: fixed;
+        background-size: 66em 124em;
+    }
+
+    .hamburger-icon #hamburger-label span {
+        height: 5px;
+        width: 30px;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        margin: 5px 0px 5px 0px;
+        transition: 0.7s ease-in-out;
+        transform: none;
+        cursor: pointer;
+    }
+    .second_piece .navbar{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    div.menu-pane2 {
+        background:linear-gradient(to bottom, #3A3434, #000);
+        position: absolute;
+        top: 0;
+        transform: translateX(-188em);
+        width: 26em;
+        height: 49em;
+        transition: 0.5s ease-in-out;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    input.hamburger-checkbox {
+        position: absolute;
+        z-index: 3;
+        top: 4vh;
+        left: 5vw;
+        width: 6vw;
+        opacity: 0;
+        height: 6vh;
+        cursor: pointer;
+    }
+
+    #form{
+        background-color: black;
+        display: flex;
+        align-items: center;
+        width: 5px;
+        border-radius: 15px;
+        padding: 0 12em;
+    }
+
+    #form button{
+        background-color: #3A3434;
+        position: relative;
+        float: right;
+        right:8em;
+        border: 0;
+        border-radius: 15px;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        width: 60px;
+        height:60px;
+    }
+
+    #form input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        font-size: 20px;
+        color: white;
+        position: relative;
+        float: left;
+        left:-9em;
+        backdrop-filter: blur(4px) saturate(180%);
+        cursor: url("/static/cursor/BloodyText.cur"),text;
+    }
+
+    .third_piece .movies{
+        position: relative;
+        top: 7vw;
+        left:50%;
+        transform: translate(7%);
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 75px;
+    }
+
+    .first_piece h1.h1first{
+        color: white;
+        font-family: "Copperplate Gothic Light", fantasy;
+        font-size: 24px;
+        position: relative;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .first_piece h1.h1second{
+        color: white;
+        font-family: "Copperplate Gothic", fantasy;
+        font-size: 34px;
+        position: relative;
+        top:-30px;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .menu-pane .lateral .account #imgAccount{
+        position: relative;
+        float: left;
+        top: 4em;
+        left: -47vw;
+        transform: translateY(9vw);
+        width: 45px;
+        height: 47.41px;
+    }
+
+    .menu-pane .lateral .account .writeAccount #nomeAccount{
+        position: relative;
+        float: left;
+        top: 3em;
+        left: -45vw;
+        transform: translateY(8vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .menu-pane .lateral .manual .writeManual #nomeManual{
+        position: relative;
+        float: left;
+        top: 1em;
+        left: 3vw;
+        transform: translateY(4vw);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .third_piece .movies .card .movie .box{
+        position: relative;
+        right:50%;
+        transform: translate(-50%);
+        border: none;
+        border-radius: 15px;
+        width: 229px;
+        height: 285px;
+        background: linear-gradient(to bottom, #434141, #222222);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .third_piece .movies .card .movie .box:hover{
+        transform: scale(1);
+    }
+
+    .third_piece .movies .card .movie p{
+        position: relative;
+        top: -1vw;
+        left:50%;
+        transform: translate(-50%);
+        font-size: 22px;
+        color:white;
+        font-family: "Barlow", sans-serif;
+    }
+
+    .third_piece .movies .card .movie .box .picture{
+        position: relative;
+        top:-1px;
+        left: -6px;
+        width: 229px;
+        height: 285px;
+        border-radius: 15px;
+    }
+
+    .third_piece .movies .card .fav_heart .fav_heart_btn{
+        position: relative;
+        bottom: 4em;
+        float: right;
+        right: 50%;
+        transform: translate(-230%);
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #ff0073;
+        transition: 0.2s ease-in-out;
+        display: block;
+    }
+
+    .second_piece .navbar .dropdown1 .dropbtn1{
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        width: 227px;
+        height: 40px;
+        color: white;
+        background: linear-gradient(to bottom, #982626, #390C0C);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .second_piece .navbar .dropdown1 .dropbtn1:hover{
+        background: linear-gradient(to bottom, #c73434, #5b1414);
+    }
+
+    .second_piece .navbar .dropdown1 .dropbtn1:active{
+        background: linear-gradient(to top, #982626, #390C0C);
+    }
+
+    .dropbtn1 p{
+        font-size: 20px;
+        margin: 4px 2px;
+    }
+
+    .second_piece .navbar .dropdown2 .dropbtn2{
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        width: 227px;
+        height: 40px;
+        color: white;
+        background: linear-gradient(to bottom, #982626, #390C0C);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .second_piece .navbar .dropdown2 .dropbtn2:hover{
+        background: linear-gradient(to bottom, #c73434, #5b1414);
+    }
+
+    .second_piece .navbar .dropdown2 .dropbtn2:active{
+        background: linear-gradient(to top, #982626, #390C0C);
+    }
+
+    .dropbtn2 p{
+        font-size: 20px;
+        margin: 4px 2px;
+    }
+
+    .second_piece .navbar .dropdown3 .dropbtn3{
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        width: 227px;
+        height: 40px;
+        color: white;
+        background: linear-gradient(to bottom, #982626, #390C0C);
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        transition: 0.3s;
+    }
+
+    .second_piece .navbar .dropdown3 .dropbtn3:hover{
+        background: linear-gradient(to bottom, #c73434, #5b1414);
+    }
+
+    .second_piece .navbar .dropdown3 .dropbtn3:active{
+        background: linear-gradient(to top, #982626, #390C0C);
+    }
+
+    .dropbtn3 p{
+        font-size: 20px;
+        margin: 4px 2px;
+    }
+
+    .hamburger-icon span {
+        height: 17px;
+        width: 75px;
+        background-color: white;
+        display: block;
+        border-radius: 5px;
+        margin: 5px 0px 5px 0px;
+        transition: 0.7s ease-in-out;
+        transform: none;
+        cursor: pointer;
+
+    }
+
+    div.menu-pane {
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        transform: translateX(-105vw);
+        width: 540px;
+        height: 125em;
+        transition: 0.5s ease-in-out;
+    }
+
+    #open_menu:checked ~ .hamburger-icon span:nth-of-type(2) {
+        transform: rotate(-25deg);
+        background-color: black;
+        position: fixed;
+    }
+
+    #open_menu:checked ~ .hamburger-icon span:nth-of-type(3) {
+        transform: rotate(25deg);
+        background-color: black;
+        position: fixed;
+        top:60px;
+    }
+
+    #open_menu:checked ~ .hamburger-icon span:nth-of-type(1) {
+        opacity: 0;
+        position: fixed;
+    }
+
+    #open_menu:checked ~ .menu-pane {
+        top: 0;
+        left: 30px;
+        transform: translateX(-30px);
+        background-color: #d9d9d9;
+        z-index: 99;
+
+    }
+
+    /*CSS of fifth_piece*/
+
+
+
+    .photo #henko {
+        position: relative;
+        border-radius: 15px;
+        left: 50%;
+        transform: translate(55%);
+        bottom: 17px;
+        width: 300px;
+        height: 410px;
+    }
+
+    .trailer h1 {
+        position: relative;
+        top: 2em;
+        left: 50%;
+        transform: translate(-30%);
+        font-family: "Barlow", sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .trailer video {
+        width: 20em;
+        height: 20em;
+    }
+
+}

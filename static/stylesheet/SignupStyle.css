@@ -1,0 +1,368 @@
+
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+
+}
+
+.high_piece{
+    background-color: transparent;
+    position: relative;
+    top: 15em;
+    width:55em;
+    padding: 10px;
+    text-align: center;
+}
+.high_piece h1{
+    color:white;
+    font-family: 'Copperplate Gothic Light', fantasy;
+    font-size:42px;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+.big_piece .low_piece{
+    width: 400px;
+    height: 470px;
+    border-radius: 15px;
+    background-color: #101010;
+    position: absolute;
+    top:50%;
+    left:75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.big_piece .warning{
+    width: 505px;
+    height: 195px;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    background-color: #101010;
+    border-radius: 15px;
+}
+
+.big_piece .warning p{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    text-align: center;
+}
+
+.big_piece .low_piece .text_name .text_nome{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .text_surname .text_cognome{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .text_username #username{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .text_email #email{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .text_pwd #password{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .conf_pwd #conf_password{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .text_name #nome{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .text_surname #cognome{
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: url("/static/cursor/BloodyText.cur"),text;
+}
+
+.big_piece .low_piece .button #submit{
+    background-color: #982626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.big_piece .alreadyaccount p {
+    color: #ffffff;
+    font-size: 18px;
+    position: relative;
+    float: right;
+    top:21em;
+    right:15em;
+    transform: translate(6, -15em);
+}
+
+.big_piece .alreadyaccount p .linke{
+    color: white;
+    text-decoration: none;
+}
+.big_piece .alreadyaccount p .linke:hover{
+    color: yellow;
+}
+
+a{
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.warning .error1{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+
+.warning .error2{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+.warning .error3{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+.warning .error4{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+.warning .error5{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+.warning .error6{
+    margin-top:7px;
+    margin-bottom:7px;
+    margin-right:50px;
+    margin-left:50px;
+    color: #da1c02;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) { /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .high_piece{
+        background-color: transparent;
+        position: relative;
+        top: 5em;
+        left: 50%;
+        transform: translate(-50%);
+        width:40em;
+        padding: 10px;
+        text-align: center;
+    }
+    .high_piece h1{
+        color:white;
+        font-family: 'Copperplate Gothic Light', fantasy;
+        font-size:42px;
+    }
+
+    .big_piece .low_piece {
+        width: 400px;
+        height: 470px;
+        border-radius: 15px;
+        background-color: #101010;
+        position: absolute;
+        top:70%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .big_piece .alreadyaccount p {
+        color: #ffffff;
+        font-size: 18px;
+        position: relative;
+        float: right;
+        top:26.5em;
+        right:15em;
+    }
+
+    .big_piece .warning{
+        width: 505px;
+        height: 195px;
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #101010;
+        border-radius: 15px;
+    }
+}
+
+#submit:hover{
+    box-shadow: 5px 5px 10px red;
+}
+
+@media screen and (max-width: 412px) {
+    body{
+        background-image: url("/static/images/dark.jpg");
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-size: 412px 1075px;
+    }
+
+    .high_piece{
+        background-color: transparent;
+        position: relative;
+        top: 1em;
+        left: 50%;
+        transform: translate(-50%);
+        width:25em;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .high_piece h1 {
+        color: white;
+        font-family: 'Copperplate Gothic Light', fantasy;
+        font-size: 31px;
+    }
+
+    .big_piece .low_piece {
+        width: 400px;
+        height: 535px;
+        border-radius: 15px;
+        background-color: #101010;
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .big_piece .warning {
+        width: 400px;
+        height: 215px;
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #101010;
+        border-radius: 15px;
+    }
+
+    .big_piece .alreadyaccount p {
+        color: #ffffff;
+        font-size: 18px;
+        position: relative;
+        float: right;
+        top: 26.5em;
+        right: 22vw;
+    }
+
+}

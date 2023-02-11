@@ -1,0 +1,203 @@
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+}
+
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+
+.h1_first{
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+img#image{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    z-index: 1;
+}
+
+.h1_first h1{
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-size: 30px;
+}
+
+img:hover{
+    transform: rotate(-360deg);
+}
+
+.return #image{
+    position: relative;
+    float: left;
+    top:22px;
+    left:60px;
+}
+
+.second_part{
+    width: 700px;
+    height: 430px;
+    border-radius: 15px;
+    background-color: #302C2C;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.second_part .button .logout_btm .link_logout .logout_push{
+    background-color: #982626;
+    position: relative;
+    top: 6vw;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    width: 150px;
+    height: 40px;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+
+.second_part .lightgrey_part{
+    background-color: #B4AFAF;
+    position: relative;
+    top:5%;
+    left:50%;
+    transform: translate(-50%);
+    width: 40em;
+    height: 15em;
+    border-radius: 15px;
+}
+
+.lightgrey_part p{
+    font-size: 24px;
+    font-family: "Barlow", sans-serif;
+}
+
+.lightgrey_part .e1{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 20px;
+}
+
+.lightgrey_part .e2{
+    display: flex;
+    position: relative;
+    top:-15vw;
+    flex-direction: row;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.second_part .button .logout_btm .link_logout .logout_push:hover{
+    box-shadow: 5px 5px 10px #1c1a1a;
+}
+
+@media screen and (max-width: 800px) {
+    .lightgrey_part .e2{
+        display: flex;
+        position: relative;
+        top:-30vw;
+        flex-direction: row;
+        justify-content: right;
+        margin-right: 20px;
+    }
+    img#image{
+        width:35px;
+        height:35px;
+        transition: transform .5s;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        z-index: 1;
+    }
+    img:hover{
+        transform: rotate(-360deg);
+    }
+
+    .return #image{
+        position: relative;
+        float: left;
+        top:30px;
+        left:30px;
+    }
+}
+
+@media screen and (max-width: 412px){ /*Galaxy A70 screen*/
+    img#image{
+        width:35px;
+        height:35px;
+        transition: transform .5s;
+        z-index: 1;
+    }
+    img:hover{
+        transform: rotate(-360deg);
+    }
+
+    .return #image{
+        position: relative;
+        float: left;
+        top:30px;
+        left:5px;
+    }
+
+    .second_part {
+        width: 380px;
+        height: 430px;
+        border-radius: 15px;
+        background-color: #302C2C;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+
+    .second_part .lightgrey_part {
+        background-color: #B4AFAF;
+        position: relative;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 22em;
+        height: 17em;
+        border-radius: 15px;
+    }
+
+    .lightgrey_part .e2 {
+        display: flex;
+        position: relative;
+        top: -47vw;
+        flex-direction: row;
+        justify-content: right;
+        margin-right: 20px;
+    }
+
+    .second_part .button .logout_btm .link_logout .logout_push {
+        background-color: #982626;
+        position: relative;
+        top: 15vw;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 4px 2px;
+        width: 150px;
+        height: 40px;
+    }
+
+}

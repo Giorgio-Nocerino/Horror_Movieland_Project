@@ -1,0 +1,644 @@
+body{
+    background-image: url("/static/images/dark.jpg");
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    background-size: 1536px 794px;
+}
+
+html{
+    cursor: url("/static/cursor/BloodyCursor.cur"), auto;
+
+}
+
+img#image{
+    width:45px;
+    height:45px;
+    transition: transform .5s;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    z-index: 1;
+}
+img:hover{
+    transform: rotate(-360deg);
+}
+
+.return #image{
+    position: relative;
+    float: left;
+    top:38px;
+    left:60px;
+}
+
+.top_piece{
+    background-color: transparent;
+    position: relative;
+    top: 1em;
+    padding: 10px;
+    text-align: center;
+}
+
+.top_piece h1.h1{
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.bottom_piece .fav_movies{
+    position: relative;
+    top: 7vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+.bottom_piece .fav_movies .card {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bottom_piece .fav_movies .card .movie .box{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 227px;
+    height: 282px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.bottom_piece .fav_movies .card .fav_bin .fav_bin_btn{
+    position: relative;
+    bottom: 4em;
+    float: right;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    transition: 0.2s ease-in-out;
+    display: none;
+}
+
+.bottom_piece .fav_movies .card:hover .fav_bin .fav_bin_btn{
+    display: block;
+}
+
+.bottom_piece .fav_movies .card .fav_bin .fav_bin_btn img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:5%;
+}
+
+.bottom_piece .fav_movies .card .movie .box:hover{
+    transform: scale(1.1);
+}
+
+.bottom_piece .fav_movies .card .movie p{
+    position: relative;
+    top: -1vw;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color:white;
+    font-family: "Barlow", sans-serif;
+}
+
+.bottom_piece .fav_movies .card .movie .box .picture{
+    position: relative;
+    top:-1px;
+    left: -6px;
+    width: 227px;
+    height: 282px;
+    border-radius: 15px;
+}
+/*CSS of Second Piece*/
+
+
+.movie_mother header .title{
+    background-color: transparent;
+    position: relative;
+    top: 21em;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "Copperplate Gothic", fantasy;
+    color: white;
+}
+
+section{
+    display: flex;
+    position: relative;
+    top: 23em;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#flex_section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.photo{
+    position: relative;
+    width: 27%;
+    height: 520px;
+    padding: 20px;
+}
+
+.photo #henko{
+    position: relative;
+    bottom: 3%;
+    border-radius: 15px;
+    float: right;
+    width: 300px;
+    height: 410px;
+}
+
+article {
+    position: relative;
+    top: 0;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    background-color: #101010;
+    height: auto;
+    text-align: center;
+}
+
+article h1{
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+article .plot{
+    font-family: "Barlow", sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.flex_footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer{
+    position: relative;
+    top: 23em;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.trailer {
+    position: relative;
+    top: -20px;
+    border-radius: 20px;
+    padding: 30px;
+    width: 60%;
+    background-color: transparent;
+    height: auto;
+    text-align: center;
+}
+
+.trailer h1{
+    position: relative;
+    left: 50%;
+    transform: translate(-20%);
+    font-family: "Barlow", sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+
+.trailer video{
+    width: 50em;
+    height: 25em;
+}
+
+.cast {
+    position: relative;
+    background-color: transparent;
+    padding: 15px;
+    text-align: center;
+    height: 32em;
+}
+
+.cast h1{
+    position: relative;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+    font-family: "Barlow", sans-serif;
+}
+
+.cast .actors .actor .boxy{
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    width: 170px;
+    height: 170px;
+    background: linear-gradient(to bottom, #434141, #222222);
+}
+
+.cast .actors{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35px;
+}
+
+.cast .actors .actor{
+    display: none;
+}
+
+.cast .actors .actor:nth-of-type(1){
+    display: block;
+}
+
+.cast .actors button{
+    position: relative;
+    border: none;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to bottom, #434141, #222222);
+    transition: all 5000s ease-in-out;
+    cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+}
+
+.cast .actors .actor .name{
+    position: relative;
+    top: -1vw;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    color:white;
+    font-family: "Barlow", sans-serif;
+}
+
+.cast .actors .actor .boxy .image{
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+}
+
+.previous img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:5%;
+}
+
+.next img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top:5%;
+}
+
+/*Ottavo Pezzo*/
+
+div.menu5{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    transform: translateX(-105vw);
+    width: 520px;
+    height: auto;
+    transition: 0.5s ease-in-out;
+    z-index: 150;
+}
+
+.is_open4{ /*variabile incognito*/
+    top: 0 !important;
+    left: 30px !important;
+    transform: translateX(-30px) !important;
+    background: linear-gradient(to bottom, #3A3434, #000) !important;
+}
+
+
+@media screen and (max-width: 800px) {  /*quando si ridimensiona lo schermo il secondo pezzo si sposta leggermente più in basso*/
+    .bottom_piece .fav_movies{
+        position: relative;
+        top: 7vw;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 75px;
+    }
+    .bottom_piece .fav_movies .card .fav_bin .fav_bin_btn{
+        position: relative;
+        bottom: 4em;
+        float: right;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #ff0000;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        transition: 0.2s ease-in-out;
+        display: none;
+    }
+
+    .bottom_piece .fav_movies .card:hover .fav_bin .fav_bin_btn{
+        display: block;
+    }
+    .movie_mother header .title{
+        background-color: transparent;
+        position: relative;
+        top: 21em;
+        padding: 10px;
+        text-align: center;
+        font-size: 35px;
+        font-family: "Copperplate Gothic", fantasy;
+        color: white;
+    }
+
+    section{
+        display: flex;
+        position: relative;
+        top: 23em;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #flex_section{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .photo{
+        position: relative;
+        width: 27%;
+        height: 520px;
+        padding: 20px;
+    }
+
+    .photo #henko{
+        position: relative;
+        border-radius: 15px;
+        left: 150%;
+        bottom: 17px;
+        width: 300px;
+        height: 410px;
+    }
+
+    article {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 20px;
+        padding: 30px;
+        width: 60%;
+        background-color: #101010;
+        height: auto;
+        text-align: center;
+    }
+
+    article h1{
+        font-family: "Barlow", sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    article .plot{
+        font-family: "Barlow", sans-serif;
+        font-size: 24px;
+        color: white;
+    }
+
+    .flex_footer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{
+        position: relative;
+        top: 23em;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .trailer {
+        position: relative;
+        top: -20px;
+        border-radius: 20px;
+        padding: 30px;
+        width: 60%;
+        background-color: transparent;
+        height: auto;
+        text-align: center;
+    }
+
+    .trailer h1{
+        position: relative;
+        left: 50%;
+        transform: translate(-20%);
+        font-family: "Barlow", sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .trailer video{
+        width: 43em;
+        height: 25em;
+    }
+
+    .cast {
+        position: relative;
+        background-color: transparent;
+        padding: 15px;
+        text-align: center;
+        height: 32em;
+    }
+
+    .cast h1{
+        position: relative;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+        font-family: "Barlow", sans-serif;
+    }
+
+    .cast .actors .actor .boxy{
+        position: relative;
+        border: none;
+        border-radius: 15px;
+        width: 170px;
+        height: 170px;
+        background: linear-gradient(to bottom, #434141, #222222);
+    }
+
+    .cast .actors{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .cast .actors .actor{
+        display: none;
+    }
+
+    .cast .actors .actor:nth-of-type(1){
+        display: block;
+    }
+
+    .cast .actors button{
+        position: relative;
+        border: none;
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(to bottom, #434141, #222222);
+        transition: all 5000s ease-in-out;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+    }
+
+    .cast .actors .actor .name{
+        position: relative;
+        top: -1vw;
+        left:50%;
+        transform: translate(-50%);
+        font-size: 20px;
+        color:white;
+        font-family: "Barlow", sans-serif;
+    }
+
+    .cast .actors .actor .boxy .image{
+        position: relative;
+        width: 170px;
+        height: 170px;
+        border-radius: 15px;
+    }
+    /*CSS of Return Img*/
+
+    img#image{
+        width:35px;
+        height:35px;
+        transition: transform .5s;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        z-index: 1;
+    }
+    img:hover{
+        transform: rotate(-360deg);
+    }
+
+    .return #image{
+        position: relative;
+        float: left;
+        top:45px;
+        left:30px;
+    }
+}
+
+@media screen and (max-width: 412px) { /*schermo Galaxy A70*/
+    body{
+        background-image: url("/static/images/dark.jpg");
+        background-repeat:repeat-x;
+        background-attachment: fixed;
+        background-size: 66em 124em;
+    }
+
+    .top_piece h1.h1 {
+        color: white;
+        font-family: "Barlow", sans-serif;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .bottom_piece .fav_movies{
+        position: relative;
+        top: 7vw;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .bottom_piece .fav_movies .card .fav_bin .fav_bin_btn{
+        position: relative;
+        bottom: 4em;
+        float: right;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #ff0000;
+        transition: 0.2s ease-in-out;
+        display: block;
+    }
+
+    .photo #henko {
+        position: relative;
+        border-radius: 15px;
+        left: 50%;
+        transform: translate(55%);
+        bottom: 17px;
+        width: 300px;
+        height: 410px;
+    }
+
+    .trailer h1 {
+        position: relative;
+        top: 2em;
+        left: 50%;
+        transform: translate(-30%);
+        font-family: "Barlow", sans-serif;
+        font-size: 36px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .trailer video {
+        width: 20em;
+        height: 20em;
+    }
+    /*CSS of Return Img*/
+
+    img#image{
+        width:30px;
+        height:30px;
+        transition: transform .5s;
+        cursor: url("/static/cursor/ZombiePointer.cur"),pointer;
+        z-index: 1;
+    }
+    img:hover{
+        transform: rotate(-360deg);
+    }
+
+    .return #image{
+        position: relative;
+        float: left;
+        top:42px;
+        left:5px;
+    }
+
+}
