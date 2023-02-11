@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45b1634a10.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/static/stylesheet/PrepageStyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="manifest" href="/static/js/manifest.json" />
+    <meta name="theme-color" content="white"/>
+    <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
+    <title>Prepage</title>
+</head>
+<body>
+    <div class="Piece">
+        <header>
+            <h1>Piacere, accedi o registrati</h1>
+        </header>
+        <div class="link_piece">
+            <a href="{{url_for('login')}}"><button class="login_btn"><p>ACCEDI</p></button></a><br>
+            <a href="{{url_for('signup')}}"><button class="signup_btn"><p>REGISTRATI</p></button></a><br>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

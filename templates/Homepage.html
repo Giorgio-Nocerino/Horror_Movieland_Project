@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/45b1634a10.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/static/stylesheet/HomepageStyle.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="manifest" href="/static/js/manifest.json">
+  <meta name="theme-color" content="white"/>
+  <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
+  <title>Horror Movieland</title>
+</head>
+<body>
+ <div class="principal_piece">
+
+    <div class="first_piece">
+      <input type="checkbox" id="open_menu" class="hamburger-checkbox">
+
+      <div class="hamburger-icon">
+        <label for="open_menu" id="hamburger-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="menu-pane">
+        <nav>
+          <div class="lateral">
+            <div class="manual">
+              <img src="/static/images/manualeduso/manual-icon%201.png" alt="manual" id="imgManual">
+              <div class="writeManual">
+                <a href="{{url_for('manual')}}" id="nomeManual">Manuale d'uso</a>
+              </div>
+            </div>
+            <div class="account">
+              <img src="/static/images/user.png" alt="manual" id="imgAccount">
+            <div class="writeAccount">
+              <a href="{{url_for('account')}}" id="nomeAccount">Account</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    {% if current_user.is_authenticated %}
+    <h1 class="h1first">Ciao {{ current_user.username }}, benvenuto su </h1>
+    <h1 class="h1second"> Horror Movieland!</h1>
+    {% else %}
+    <h1 class="h1first">Ciao {{session['name']}}, benvenuto su</h1>
+    <h1 class="h1second"> Horror Movieland!</h1>
+    {% endif %}
+  </div>
+  <div class="second_piece">
+    <div class="navbar">
+      <div class="dropdown1">
+          <a href="{{url_for('cinema')}}"><button class="dropbtn1"><p>Al Cinema</p></button></a>
+      </div>
+      <div class="dropdown2" id="WL">
+          <a href="{{url_for('wishlist')}}"><button class="dropbtn2"><p>Wish List</p></button></a>
+      </div>
+      <div class="dropdown3" id="cerca">
+        <button class="dropbtn3"><p>Cerca</p></button>
+      </div>
+    </div>
+  </div>
+    <div class="third_piece">
+      <div class="movies">
+       <!--movies-->
+      </div>
+    </div>
+ <div class="fourth_piece">
+  <div class="menu-pane2" id="lateralio">
+    <nav>
+      <div class="lateral">
+        <form action="" id="form" method="get" autocomplete="off">
+          <input id="search-text" type="text" class="search" placeholder="Inserisci il nome del film">
+          <button type="submit" id="search-submit" class="button"><img src="/static/images/lente.png"></button>
+        </form>
+      </div>
+      <div class="returna" id="cerca">
+        <button id="close_lateral">
+          <img src="/static/images/close.png" alt="Close" id="close">
+        </button>
+      </div>
+    </nav>
+  </div>
+ </div>
+ <div class="fifth_piece">
+         <div class="movie_mother">
+             <header id="heady">
+                 <!--title movie-->
+             </header>
+             <section id="section">
+                 <section id="flex_section">
+
+                 </section>
+             </section>
+             <footer class="flex_footer">
+                 <footer id="footer">
+
+                 </footer>
+                 <footer class="cast" id="casty">
+                         <!--cast-->
+                 </footer>
+             </footer>
+         </div>
+    </div>
+ </div>
+  <script src="/static/js/SearchMovies.js"></script>
+  <script src="/static/js/ShowMovies.js"></script>
+  <script src="/static/js/Carousel.js"></script>
+  <script src="/static/js/AR_WLMovies.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45b1634a10.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/static/stylesheet/AccountStyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/static/js/manifest.json">
+    <meta name="theme-color" content="white"/>
+    <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
+    <title>Account Profile</title>
+</head>
+<body>
+  <div class="return">
+      <a href="{{url_for('homepage')}}"><img src="/static/images/return.png" alt="Return" id="image"></a>
+   </div>
+  <div class="h1_first">
+      {% if current_user.is_authenticated %}
+      <h1> Informazioni dell'account {{ current_user.username }}</h1>
+      {% else %}
+      <h1> Informazioni dell'account {{session['name']}}</h1>
+      {% endif %}
+  </div>
+  <div class="second_part">
+      <div class="lightgrey_part">
+              <div class="e1">
+                  <p>Nome:</p>
+              </div>
+              <div class="e1">
+                 <p>Cognome:</p>
+              </div>
+              <div class="e1">
+                  <p>Email:</p>
+              </div>
+          {% if current_user.is_authenticated %}
+          <div class="e2">
+              <p>{{current_user.nome}}</p>
+          </div>
+          <div class="e2">
+              <p>{{current_user.cognome}}</p>
+          </div>
+          <div class="e2">
+              <p>{{current_user.email}}</p>
+          </div>
+          {% else %}
+          <div class="e2">
+              <p>{{session['name']}}</p>
+          </div>
+          <div class="e2">
+              <p>{{current_user.cognome}}</p>
+          </div>
+          <div class="e2">
+              <p>{{session['mail']}}</p>
+          </div>
+          {% endif %}
+
+      </div>
+      <div class="button">
+              <div class="logout_btm">
+                  <a href="{{url_for('logout')}}" class="link_logout">
+                      <button class="logout_push">LOGOUT</button>
+                  </a>
+              </div>
+      </div>
+  </div>
+</body>
+</html>

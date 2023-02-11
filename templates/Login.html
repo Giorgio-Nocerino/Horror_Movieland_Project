@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/stylesheet/LoginStyle.css">
+    <title>Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/static/js/manifest.json">
+    <meta name="theme-color" content="white"/>
+    <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
+
+</head>
+<body>
+    <div class="big_piece">
+        <div class="high_piece">
+            <h1>Benvenuto. Accedi a questo sito e potrai vedere molti film agghiaccianti!</h1>
+        </div>
+        <div class="low_piece">
+            <div class="writing">
+                <p>Inserisci i campi per accedere</p>
+            </div>
+            <form method="POST" action="">
+                {{form.hidden_tag()}}
+               <div class="error">
+                   {{msg}}
+               </div>
+            <div class="text_user">
+                {{form.username}}
+            </div>
+            <div class="text_pwd">
+                {{form.password}}
+            </div>
+            <div class="bottom">
+                <!--<input type="submit" name="submit" value="ACCEDI">ACCEDI</input>-->
+                {{form.submit}}
+            </div>
+            </form>
+            <div class="forlogin">
+                <p>Oppure accedi con:</p>
+                <div class="foreign">
+                 <a href="{{ url_for('google_login') }}">
+                     <button class="btn_google">
+                         <img src="/static/images/google.png" alt="Google">
+                         <p class="gol">Google</p>
+                     </button>
+                 </a>
+                </div>
+            </div>
+            <div class="newaccount">
+                <p>Sei nuovo/a?&nbsp;&nbsp;<a href="{{url_for('signup')}}" class="linke">REGISTRATI</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="/static/stylesheet/SignupStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/static/js/manifest.json">
+    <meta name="theme-color" content="white"/>
+    <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
+</head>
+<body>
+        <div class="big_piece">
+                <div class="high_piece">
+                    <h1>Benvenuto. Registrati a questo sito e potrai vedere molti film agghiaccianti!</h1>
+                </div>
+            <div class="low_piece">
+             <div class="writing">
+                <p>Inserisci i campi per registrare</p>
+             </div>
+              <form method="POST" action="{{ request.path }}">
+                {{form.hidden_tag()}}
+                {% if request.path == '/signup' %}
+                <div class="text_name">
+                    <!--<input type="text" name="nome" class="text_nome" placeholder="inserisci il nome">-->
+                    {{form.nome}}
+                </div>
+                <div class="text_surname">
+                    <!--<input type="text" name="cognome" class="text_cognome" placeholder="inserisci il cognome">-->
+                    {{form.cognome}}
+                </div>
+                <div class="text_email">
+                    {{form.email}}
+
+                </div>
+                <div class="text_username">
+                    {{form.username}}
+
+                </div>
+                <div class="text_pwd">
+                    <!--<input type="password" class="parola" placeholder="inserisci la password">-->
+                    {{form.password}}
+
+                </div>
+                <div class="conf_pwd">
+                    {{form.conf_password}}
+                </div>
+
+                <div class="button">
+                    {{form.submit}}
+                </div>
+            </div>
+                <div class="warning">
+                <div class="warn_title">
+                    <p>Qui sono riportati i seguenti errori nel caso la registrazione non va a buon fine:</p>
+                </div>
+                <div class="error1">
+                    {% for error in form.email.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error2">
+                    {% for error in form.username.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error3">
+                    {% for error in form.password.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                <div class="error4">
+                    {% for error in form.conf_password.errors %}
+                    {{ error }}
+                    {% endfor%}
+                </div>
+                  <div class="error5">
+                      {% for error in form.nome.errors %}
+                      {{ error }}
+                      {% endfor%}
+                  </div>
+                  <div class="error6">
+                      {% for error in form.cognome.errors %}
+                      {{ error }}
+                      {% endfor%}
+                  </div>
+            </div>
+            {% endif%}
+            </form>
+            <div class="alreadyaccount">
+                <p>Hai già un account?&nbsp;&nbsp;<a href="{{url_for('login')}}" class="linke">ACCEDI</a></p>
+            </div>
+        </div>
+</body>
+</html>

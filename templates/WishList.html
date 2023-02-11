@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/45b1634a10.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="/static/stylesheet/WishListStyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="manifest" href="/static/js/manifest.json">
+    <meta name="theme-color" content="white"/>
+    <link rel="icon" type="image/x-icon" href="/static/images/skull.png">
+    <title>Wish List</title>
+</head>
+<body>
+<div class="return">
+    <a href="{{url_for('homepage')}}"><img src="/static/images/return.png" alt="Return" id="image"></a>
+</div>
+<div class="mother_piece">
+
+    <header class="top_piece">
+        {% if current_user.is_authenticated %}
+        <h1 class="h1">Pagina dedicata alla Wish List di {{ current_user.username }}</h1>
+        {% else %}
+        <h1 class="h1">Pagina dedicata alla Wish List di {{session['name']}}</h1>
+        {% endif %}
+    </header>
+    <div class="bottom_piece">
+        <div class="fav_movies" id="favourites">
+            <!--Favourites movies-->
+        </div>
+        <div class="menu4" id="details">
+            <div class="movie_mother">
+                <header id="heady">
+                    <!--title movie-->
+                </header>
+                <section id="section">
+                    <section id="flex_section">
+
+                    </section>
+                </section>
+                <footer class="flex_footer">
+                    <footer id="footer">
+
+                    </footer>
+                    <footer class="cast" id="casty">
+                        <!--cast-->
+                    </footer>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/js/SearchMovies.js"></script>
+<script src="/static/js/ShowMovies.js"></script>
+<script src="/static/js/AR_WLMovies.js"></script>
+</body>
+</html>
